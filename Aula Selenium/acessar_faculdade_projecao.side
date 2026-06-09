@@ -2588,232 +2588,6 @@
       "value": ""
     }]
   }, {
-    "id": "ca9b34cf-2073-413a-9eb9-7cf88688b08c",
-    "name": "MBA de Gestão - Retraído",
-    "commands": [{
-      "id": "02d4f4d8-fab6-45a6-bd81-aadb7cad6dce",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "2c612d1a-91e9-4b04-87f3-991abb812fcd",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "75101bec-dbc5-4023-835c-adb3cfffa9ed",
-      "comment": "",
-      "command": "click",
-      "target": "css=.icon-bar:nth-child(3)",
-      "targets": [
-        ["css=.icon-bar:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
-        ["xpath=//span[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "4f0b1cff-eee3-4a19-b164-89992394a9d6",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d6c7541e-3fd2-4926-8509-cd21d4e22244",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão da Qualidade de Software",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "74128ef2-f3e9-4a95-bf1a-b04b69bc7e3e",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "76ba4f94-7bc4-486f-916b-92e2f268e090",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "84135b88-2acb-4b80-a639-44d16d7787a7",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão da Qualidade de Software"
-    }, {
-      "id": "bb1808fe-31a9-4b1e-a7a9-b987d275b2f5",
-      "comment": "",
-      "command": "click",
-      "target": "css=.icon-bar:nth-child(3)",
-      "targets": [
-        ["css=.icon-bar:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
-        ["xpath=//span[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1a382ce9-7ed7-415a-a5b2-47e771fcd9ed",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "63230ca6-778e-4e74-aa57-29dc1b7cafe7",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão de Projetos",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "3039ff35-5123-4151-9075-2841b1f665ca",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "58d9f1bb-2169-471b-9c1c-9d8736121c5f",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a40d566e-c7b6-4707-aace-1804f22452bd",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão de Projetos"
-    }, {
-      "id": "ba18d220-86a8-43bc-b27a-e8845dbf3e95",
-      "comment": "",
-      "command": "click",
-      "target": "css=.icon-bar:nth-child(3)",
-      "targets": [
-        ["css=.icon-bar:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
-        ["xpath=//span[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "04425a91-3980-42f9-819b-437f5f2d9d06",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "246f3e9d-4bb4-4daa-8045-153eddc8ec97",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA em Gestão Estratégica de Negócios",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d553e664-6ee9-4625-aedf-a1b72e4c2070",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "5c5b021c-f770-41c5-8ce9-51b594164b0f",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA em Gestão Estratégica de Negócios"
-    }, {
-      "id": "fc49e57c-f3e0-45f6-8374-6c9e7eda5014",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a64829d9-e54a-4c27-867e-6b0f939aaf06",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "d83629d1-fa55-4883-b1fe-443d66b7dd63",
     "name": "MBA de Gestão - Normal",
     "commands": [{
@@ -2980,6 +2754,13 @@
       "targets": [],
       "value": "urlAtual"
     }, {
+      "id": "695bafac-37ae-47e6-8755-30fb4a5dd632",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "fd604923-4045-4981-a21b-a756bec0ba8c",
       "comment": "",
       "command": "assertText",
@@ -2992,14 +2773,479 @@
       ],
       "value": "MBA em Gestão Estratégica de Negócios"
     }, {
-      "id": "695bafac-37ae-47e6-8755-30fb4a5dd632",
+      "id": "2eb3a71a-f004-45ca-aded-439e984fe654",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ae4f1c-1533-4749-bf13-2f4090076113",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão Escolar",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2795b27-e5df-4f64-b1d7-6af2addcb16e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "a4d154c5-4e51-4513-aa35-338cc12de67d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão Escolar"
+    }, {
+      "id": "8f7be270-0cbc-4d2b-a76d-0ff94dc9c793",
       "comment": "",
       "command": "echo",
       "target": "${urlAtual}",
       "targets": [],
       "value": ""
     }, {
+      "id": "8e0b6a9a-c356-42d3-b170-0303caa72a2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "97d02949-fdb4-4842-9dcc-51889566b91b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão Pública",
+      "targets": [
+        ["linkText=MBA Em Gestão Pública", "linkText"],
+        ["css=.col-md-6:nth-child(2) .ng-scope:nth-child(14) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão Pública')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[14]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27606/mba-em-gestao-publica')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[14]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão Pública')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "56145224-e2f3-40b1-b4bc-a2ecdf397e28",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "43f90064-baaa-47bb-84e0-e541811d32f9",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3247d617-dd1e-49a6-b02c-2f0860a810fc",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão Pública"
+    }, {
       "id": "a119a207-5da6-4e54-80cc-f1de742f9679",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "017fadab-4026-4b02-919b-c4e97874206a",
+    "name": "MBA de Gestão - Retraído",
+    "commands": [{
+      "id": "ab522a80-9f99-4976-b036-7a261ab2b7bb",
+      "comment": "",
+      "command": "open",
+      "target": "/faculdade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46835a9c-82e0-43f5-a040-3f83208d75ae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8186375f-3c2c-4b1a-9d43-6fb5bd98c160",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c6735b-5dc7-48ae-96e3-af7c01ed1cf6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1660acfc-5392-47eb-8fc2-357befcc53ea",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão da Qualidade de Software",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "26cb3767-d543-4772-acb6-9e3d1b61a5ab",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "2e6e795e-7895-4792-b89c-c46c6d4efb38",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f99bcae2-6e42-414f-8fb4-754c5bd77dc8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão da Qualidade de Software"
+    }, {
+      "id": "6e9f6a96-3961-4141-8748-febd0ab2fdd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fd7b8d2-77ce-45f8-be26-f00ae32a8e04",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5813243-cf0e-4bc5-a066-f45a8f5a700c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão de Projetos",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e82d10bc-e9a1-4726-8f3c-b543a91a2d03",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "04e3e182-0b5b-4dc7-bc22-8bb9c1af5a3f",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50579322-4730-4cd4-a3ec-0926b856cd5e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão de Projetos"
+    }, {
+      "id": "cc08f40b-2590-461e-a3ba-37f30c42e512",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12b0a49f-0440-444b-834e-ec05fbca76a2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "46aeb805-d4e8-455c-86de-ea8ea862dc10",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA em Gestão Estratégica de Negócios",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "127b5dd1-c6ca-444a-85ef-9120c5cb1994",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "ce888b11-c7cc-4f8c-acf6-5cc7d955510b",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "839f195e-35a8-4189-8779-98663fc445db",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA em Gestão Estratégica de Negócios"
+    }, {
+      "id": "19663a8c-1a6a-4757-a58e-aae861377a5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f08fdd8c-dff3-4117-81ad-45ba751d8d75",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e40802f8-5ec9-4dd9-98a7-c09e2a20a72b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão Escolar",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f0c88c-d374-4305-851b-a71b26dbe6a7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "e3c90db1-cb15-4a74-8ca7-3a67974bdf06",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c49a3c6-bced-49f8-9c3b-2fe44ab41de6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão Escolar"
+    }, {
+      "id": "ecc8f5a5-87b2-4d13-9c04-ae3f0c34f30f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca81e80c-df0d-43b3-b660-a3ff17de40e0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e6b91d-5a10-47f8-b7c5-5981ea1df3e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão Pública",
+      "targets": [
+        ["linkText=MBA Em Gestão Pública", "linkText"],
+        ["css=.col-md-6:nth-child(2) .ng-scope:nth-child(14) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão Pública')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[14]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27606/mba-em-gestao-publica')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[14]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão Pública')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9f298eb-5beb-476e-b765-b12c566b4e79",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "21a24939-3656-4fa8-a82f-a8ce2bc8a603",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "358883c1-e96f-4f04-9e40-e26df49d6059",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão Pública"
+    }, {
+      "id": "73546c39-8188-4e39-845f-0d28d85a6597",
       "comment": "",
       "command": "close",
       "target": "",
@@ -3069,7 +3315,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["7deabb95-307f-41f4-8c74-352417b80e4a", "69afc270-def2-405d-a1d5-f67aac583ea1", "6536420f-c8ce-462e-b547-96786d93d9ef", "1f65a4b8-0f35-412c-99aa-1086729af256", "d83629d1-fa55-4883-b1fe-443d66b7dd63", "ca9b34cf-2073-413a-9eb9-7cf88688b08c"]
+    "tests": ["7deabb95-307f-41f4-8c74-352417b80e4a", "69afc270-def2-405d-a1d5-f67aac583ea1", "6536420f-c8ce-462e-b547-96786d93d9ef", "1f65a4b8-0f35-412c-99aa-1086729af256", "d83629d1-fa55-4883-b1fe-443d66b7dd63"]
   }, {
     "id": "e962cd40-e673-4de7-82fb-729a9cf3af2c",
     "name": "Núcleo de Extensão",
