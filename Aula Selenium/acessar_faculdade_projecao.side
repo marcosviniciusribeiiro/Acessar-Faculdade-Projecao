@@ -1334,174 +1334,6 @@
       "value": ""
     }]
   }, {
-    "id": "2063ff77-6314-47fd-b97b-ae1bc5c8277e",
-    "name": "Unidade de Sobradinho-Normal",
-    "commands": [{
-      "id": "f0fc3b5e-5f8e-4201-a382-587801bdcfd7",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7cdeea14-f353-4722-bed6-2421e542fcda",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8b011a14-6841-446d-aab5-6cf781c05ee8",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Unidades",
-      "targets": [
-        ["linkText=Unidades", "linkText"],
-        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "af9925b0-5168-424c-ac02-e53669d8f8e8",
-      "comment": "",
-      "command": "click",
-      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding",
-      "targets": [
-        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding", "css:finder"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div/address/a/strong", "xpath:idRelative"],
-        ["xpath=//strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'Faculdade Projeção de Sobradinho - Prédio 13')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "ddbf3b74-2178-43a1-8daf-34a0794390ef",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "01100fe1-4851-4d42-a71f-9c5bb86f7264",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "36ac71b4-7237-4431-830c-72d0b3bcb51c",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
-      ],
-      "value": "Faculdade Projeção de Sobradinho - Prédio 13"
-    }, {
-      "id": "beba2db8-dce7-4e34-8dbe-a93e229783cd",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "a6ba361a-f65e-44d4-a264-e0a9e1545f1b",
-    "name": "Unidade de Sobradinho-Retraído",
-    "commands": [{
-      "id": "a0878365-5673-4a71-9cee-79c365b4e9db",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7107d2e5-e5ac-4cf0-937d-f64824fc090f",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "02eeeaea-04fd-4057-8172-cecd22875650",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "3b0151b2-34f3-4188-bcc1-7d939811a916",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Unidades",
-      "targets": [
-        ["linkText=Unidades", "linkText"],
-        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "50da4aef-7289-41e0-bfba-3c71f2bfa322",
-      "comment": "",
-      "command": "click",
-      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding",
-      "targets": [
-        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding", "css:finder"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div/address/a/strong", "xpath:idRelative"],
-        ["xpath=//strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'Faculdade Projeção de Sobradinho - Prédio 13')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1cd30c0f-542a-4b0d-a8e2-f9e3f412691d",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "78ca4769-347c-4a00-bcad-085bd7266a3d",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0ba6f512-4e26-43af-a311-12adee792859",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
-      ],
-      "value": "Faculdade Projeção de Sobradinho - Prédio 13"
-    }, {
-      "id": "ddcce3c1-3278-4082-b1fc-ee46c31c6989",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "b46f79c4-c246-4b13-a903-cd015d67874a",
     "name": "Extensão-Normal",
     "commands": [{
@@ -1610,677 +1442,6 @@
       "value": "Cursos de Extensão - Inscrição"
     }, {
       "id": "78a5a988-3067-4cd4-9c9e-99ccad38d562",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "823e3481-1938-4ca0-9e15-b553faebf2eb",
-    "name": "TADS",
-    "commands": [{
-      "id": "b4ba7a2e-5ade-4d70-a0c1-23a2b5d8af96",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "fa8e0153-bd96-41d7-9441-aa1024197803",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "77fc456d-c2b5-4619-b0ba-141bec89d5c0",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "35245fd9-9641-4854-8a3d-21da532f6375",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Tecnologia em Análise e Desenvolvimento de Sistemas",
-      "targets": [
-        ["linkText=Tecnologia em Análise e Desenvolvimento de Sistemas", "linkText"],
-        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(20) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[20]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/23678/tecnologia-em-analise-e-desenvolvimento-de-sistemas')]", "xpath:href"],
-        ["xpath=//li[20]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "80f4f1df-8b27-4a66-a6d7-c3a599d220f2",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "5e51091b-5e72-47e7-a236-3af78d68dac3",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "01308723-9f4c-40b3-8dac-420cda7899b7",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)')]", "xpath:innerText"]
-      ],
-      "value": "Tecnologia em Análise e Desenvolvimento de Sistemas"
-    }, {
-      "id": "92a857a0-a22e-4f00-8ec2-b6f1dba14182",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "95c2d488-02dc-4047-825b-e35604984442",
-    "name": "TADS (Flex)",
-    "commands": [{
-      "id": "b26c8e89-d393-472a-a33b-fcddc445ffe8",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1fb46ffe-59e8-4225-af1e-5db5a48aad5e",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ef4f09d7-fe37-4023-b678-796951855006",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "57e0f38a-a533-4948-aef8-6105ff8f354f",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)",
-      "targets": [
-        ["linkText=Tecnologia em Análise e Desenvolvimento de Sistemas", "linkText"],
-        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(20) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[20]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/23678/tecnologia-em-analise-e-desenvolvimento-de-sistemas')]", "xpath:href"],
-        ["xpath=//li[20]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1601cda6-9e9f-488c-854e-62aae902f1c0",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "13107a35-01a3-448b-8251-2a63f983f826",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "792494d7-90d0-4a7a-8986-63c15c9e55be",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)')]", "xpath:innerText"]
-      ],
-      "value": "Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)"
-    }, {
-      "id": "cd553edf-4eca-4fd7-8173-2c0ab7064e86",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "6aa9dddf-3503-4562-88a6-b8438591b0da",
-    "name": "Sistema da Informação",
-    "commands": [{
-      "id": "438d9b47-9eeb-4be2-a19f-551ed6004c32",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "56e2013b-1210-40e2-841e-af3e2d19ae96",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "8b3fdb4f-1e57-48f3-af1c-a7e3f39993c5",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "19208ccf-c047-421b-87eb-985c96287951",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Sistemas de Informação (Presencial)",
-      "targets": [
-        ["linkText=Sistemas de Informação (Presencial)", "linkText"],
-        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(19) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'Sistemas de Informação (Presencial)')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[19]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/23677/sistemas-de-informacao-presencial')]", "xpath:href"],
-        ["xpath=//li[19]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Sistemas de Informação (Presencial)')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "10db52a1-538d-405b-b1f4-1a29eeeccbe7",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "a236c614-8575-491e-b337-afd05b9ef40f",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "e7354064-bd95-4b36-8cc8-9a8571442299",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' Sistemas de Informação (Flex)')]", "xpath:innerText"]
-      ],
-      "value": "Sistemas de Informação (Presencial)"
-    }, {
-      "id": "8cdd6828-b6bc-450e-8888-8e18b23675a9",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "b1e91bfc-8338-4c59-b013-36afa96f8e8a",
-    "name": "Sistema da Informação (Flex)",
-    "commands": [{
-      "id": "cdf634f0-2366-40c3-99c7-df398325215a",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "be26b2a9-b8bc-43b4-90fd-782bc9eae2b5",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "19af0eaf-42ed-40b8-aae8-8237b5bacacc",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "927e0dce-9bc7-47a3-8a6a-5b4a3feb5427",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Sistemas de Informação (Flex)",
-      "targets": [
-        ["linkText=Sistemas de Informação (Presencial)", "linkText"],
-        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(19) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'Sistemas de Informação (Presencial)')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[19]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/23677/sistemas-de-informacao-presencial')]", "xpath:href"],
-        ["xpath=//li[19]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Sistemas de Informação (Presencial)')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "46fef3e9-5411-490f-8cde-0e9f0e9ce017",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "44431d65-8da3-41ec-a76f-b280811d1438",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "366c02eb-1202-4ffb-ac38-820c248cf036",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' Sistemas de Informação (Flex)')]", "xpath:innerText"]
-      ],
-      "value": "Sistemas de Informação (Flex)"
-    }, {
-      "id": "09d07cb3-5b83-4e86-8a24-93e89da9bb08",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "f320903c-2bed-40f6-b5de-8715cd3f828d",
-    "name": "Gestão da Qualidade de Software-Retraído",
-    "commands": [{
-      "id": "4c050c8b-b8ef-479e-8f7a-bf47e87c9b00",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "82f92844-fcb9-44a1-b5e3-ece792174bcb",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c1326242-64b1-4324-b807-7bd1d9ae183a",
-      "comment": "",
-      "command": "click",
-      "target": "css=.icon-bar:nth-child(3)",
-      "targets": [
-        ["css=.icon-bar:nth-child(3)", "css:finder"],
-        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
-        ["xpath=//span[3]", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "ed6ed36f-81ac-45ae-a999-c90035c43d06",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "92726db6-6f4c-4485-93ed-0cb511c53850",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão da Qualidade de Software",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "c08c66a8-4bc0-4cd8-bbbe-315d2ec69c30",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "bc96b2d0-8a60-490b-a2ef-2af808986ab6",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "fe794e85-5668-4efb-9564-2ecad7703863",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão da Qualidade de Software"
-    }, {
-      "id": "31a64b42-732f-4065-bac0-c0f6c555e83c",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "4775c9f3-7e3a-475e-8f30-36885c9ce34b",
-    "name": "Gestão de Projetos-Normal",
-    "commands": [{
-      "id": "ea514c95-9609-458a-97a6-85e7de8453e4",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "4e66abfa-eec4-4591-b0b2-d7b160a86a9f",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f3585515-4813-47ba-91f1-988b5255ee3f",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d82329a3-577f-451b-b31c-33e486a7f569",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão de Projetos",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "b144eed4-958e-469a-8300-deed2de3b0fc",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "171fd387-1e45-419f-a231-2a2c61b8696e",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "45547d44-9f94-4403-a989-b04bb019f5ab",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão de Projetos"
-    }, {
-      "id": "6d7cf6ae-577c-4c6b-a83e-83933222725b",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "3dad5215-6e74-476d-a0d9-a2d46aedc274",
-    "name": "Gestão da Qualidade de Software-Normal",
-    "commands": [{
-      "id": "03f14018-ff37-423d-8fad-3350027ae7ca",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1b246d14-b3d9-4771-bbb5-10b392830b9d",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "db4b8e8d-870f-47da-9fec-0b595c2d3191",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e23a9ae4-f8c6-40ad-bc2f-874c07246a59",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão da Qualidade de Software",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "4e21496d-eb4b-4d45-a6f3-e7d33df15dea",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "d7614184-46d6-4c51-b539-621fc87de2e2",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "82e82220-fd74-48bc-80ce-736799e98b2c",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão da Qualidade de Software"
-    }, {
-      "id": "3db7e355-a2b1-4163-b613-b1bd6cf2a721",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "ccaed505-34de-4411-8b3d-b9d3617f1747",
-    "name": "Gestão de Projetos-Retraído",
-    "commands": [{
-      "id": "fbcc86c0-ade2-4a5a-9f6c-32bef9547343",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "f861de09-2c55-4ff5-82e4-d7e45392f71d",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "526963e8-677d-42b9-952c-6e6e5a1fe945",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "4f901e3d-c852-4f9a-a4d1-fcd30a06dc21",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "175784f9-bf6b-4868-9570-2c80f8ce604b",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão de Projetos",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5891d542-b80d-4f64-bd11-01474a644c72",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "ac6c81f3-1c42-41cd-a4d4-b229cc2b006d",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7b8a6170-6414-4f3e-bd8f-70459e6a919c",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão de Projetos"
-    }, {
-      "id": "06a25b5f-8b6e-4218-a696-bec672ee8ebb",
       "comment": "",
       "command": "close",
       "target": "",
@@ -2462,180 +1623,6 @@
       "value": ""
     }]
   }, {
-    "id": "968c1dbc-8d14-41b0-87d7-96ddb5221b0d",
-    "name": "Gestão Estratégica de Negócios-Normal",
-    "commands": [{
-      "id": "5c85ec76-6e3f-4813-b393-0f59959fbd97",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "58f58569-0fbe-48a8-8519-b077491e6d16",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "48106258-539c-42eb-b658-850cc136ae07",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "e0f04934-cd30-4a14-8b82-36db26555926",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA em Gestão Estratégica de Negócios",
-      "targets": [
-        ["linkText=MBA em Gestão Estratégica de Negócios", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(13) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA em Gestão Estratégica de Negócios')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[13]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27610/mba-em-gestao-estrategica-de-negocios')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[13]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA em Gestão Estratégica de Negócios')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "be7a7813-9198-45b8-8c8c-a8b2a5cc2ae3",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "6ad3c65f-9267-4486-91f8-5d54bf4e595c",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "59b4c10b-02ec-400c-a73e-0852909925dc",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA em Gestão Estratégica de Negócios"
-    }, {
-      "id": "5c8b5d2e-9b6d-4748-b9d0-d7cff082d610",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "1138611d-6adf-480a-b363-843a08032ed0",
-    "name": "Gestão Estratégica de Negócios-Retraído",
-    "commands": [{
-      "id": "82a395ae-09f9-4993-8780-395188012284",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "87a68375-9cca-459f-aabd-c794d930513a",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "b073f170-6331-42a4-8bba-92d16afd3e1f",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "1cc2b566-e48c-4043-b8f7-c07c31bd2c28",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "0d205444-2a19-4753-86f5-afb406314050",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA em Gestão Estratégica de Negócios",
-      "targets": [
-        ["linkText=MBA em Gestão Estratégica de Negócios", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(13) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA em Gestão Estratégica de Negócios')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[13]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27610/mba-em-gestao-estrategica-de-negocios')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[13]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA em Gestão Estratégica de Negócios')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "9a6385cb-ece6-45de-831a-bfdf91c7303a",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "8cc3cc91-fb59-44b7-9ffe-8d693ffb8b0e",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ec194d36-0f7f-4d09-94c6-28ec1071838e",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA em Gestão Estratégica de Negócios"
-    }, {
-      "id": "65aeddaa-9df4-4af6-b7e2-c4a5c73bb3f5",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "1f65a4b8-0f35-412c-99aa-1086729af256",
     "name": "Gestão Pública-Retraído",
     "commands": [{
@@ -2810,505 +1797,6 @@
       "value": ""
     }]
   }, {
-    "id": "36d1b1f8-779a-434d-b9dc-ec044ee83394",
-    "name": "Planejamento Educacional-Retraído",
-    "commands": [{
-      "id": "db0935b8-d482-4fff-9da6-d4b6ca5665da",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "c6694ec8-8dc8-4f95-9ab2-8ae4ce1d0149",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a8e7279f-9d97-4263-bdce-4502bcf35bda",
-      "comment": "",
-      "command": "click",
-      "target": "css=.icon-bar:nth-child(1)",
-      "targets": [
-        ["css=.icon-bar:nth-child(1)", "css:finder"],
-        ["xpath=//div[@id='menu-site']/div/div/button/span", "xpath:idRelative"],
-        ["xpath=//button/span", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "40bbe5d5-d36a-46d5-8d3d-6a9c27966892",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "18f2b335-27b9-46a6-ae90-3fdfdd23bb02",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Planejamento Educacional",
-      "targets": [
-        ["linkText=MBA Em Planejamento Educacional", "linkText"],
-        ["css=.col-md-6:nth-child(2) .ng-scope:nth-child(15) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Planejamento Educacional')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[15]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27601/mba-em-planejamento-educacional')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[15]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Planejamento Educacional')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d944d2f2-4444-4579-978e-976b413f7184",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "b0fdcca3-e6c5-4654-9153-8e3e6c736d20",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "a29cab24-7f06-4659-bff6-3696c925ce4b",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Planejamento Educacional"
-    }, {
-      "id": "c9d747bc-d987-4a1e-9d68-6fbe12677251",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "3342a4c9-4af0-442d-817d-0ef98300f654",
-    "name": "Planejamento Educacional-Normal",
-    "commands": [{
-      "id": "0b0b1259-d063-4974-a23b-1047ffb2f8ef",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "404536c9-6801-4a70-b7bf-9d0492ddb93c",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "70eff205-dd8f-4054-aa22-ee5e5521d40c",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "4e3b7831-2111-45a5-8340-b8f34f404983",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Planejamento Educacional",
-      "targets": [
-        ["linkText=MBA Em Planejamento Educacional", "linkText"],
-        ["css=.col-md-6:nth-child(2) .ng-scope:nth-child(15) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Planejamento Educacional')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[15]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27601/mba-em-planejamento-educacional')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[15]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Planejamento Educacional')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "de5b1dba-6838-46f4-a581-ed2dbe31a851",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "4fb74d43-6807-4e44-923a-3cc751640197",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d63a326b-8968-4d16-a879-f5ef224e8abf",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Planejamento Educacional"
-    }, {
-      "id": "6d86eb84-e1f8-4633-aecf-53dd25631e8f",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "9d892c43-dca1-4098-973a-d4aacff92c18",
-    "name": "Unidade do Guará-Normal",
-    "commands": [{
-      "id": "b97be2c5-2813-4c24-a0b4-37375d05f176",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "54d9627b-13ca-4238-9953-c9cef5edd5bc",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "1cdeccb6-01dc-4748-8a1c-94e58f16d528",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Unidades",
-      "targets": [
-        ["linkText=Unidades", "linkText"],
-        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "61b79f70-0918-4e48-8031-cb2f5ddf9ec9",
-      "comment": "",
-      "command": "click",
-      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding",
-      "targets": [
-        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding", "css:finder"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[2]/address/a/strong", "xpath:idRelative"],
-        ["xpath=//div[2]/address/a/strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'Faculdade Projeção do Guará')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "04258b95-e602-4797-b8a3-d9e41bbf6f7e",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "f9e08988-14ea-491c-9c48-60622e0140e7",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "04b75397-3bbd-4ac4-92a5-9163dfde5f4a",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [],
-      "value": "Faculdade Projeção do Guará"
-    }, {
-      "id": "6480bddd-e482-462b-afcb-9da7f61ea53d",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "4dd7cf43-eb66-47b9-b8d7-d4724c06c2d2",
-    "name": "Unidade de Taguatinga-Normal",
-    "commands": [{
-      "id": "5566b19f-b8d0-4c24-b8f1-83dc6e3f46ff",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "0947b882-5cdd-4b6e-8fcd-ce210aaedb48",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "858b7e70-c592-4a7a-9ba8-945862ad2bf1",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Unidades",
-      "targets": [
-        ["linkText=Unidades", "linkText"],
-        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "fea31de3-c2fd-4319-9e40-663a3d04f4b7",
-      "comment": "",
-      "command": "click",
-      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding",
-      "targets": [
-        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding", "css:finder"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[3]/address/a/strong", "xpath:idRelative"],
-        ["xpath=//div[3]/address/a/strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "5df63f1e-8a45-4834-97fe-7044bcefa404",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "75824f87-a9a2-479d-859c-fd7e48c00fcc",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "93ae0388-5925-49e0-8ded-a5e5c4beaae1",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
-      ],
-      "value": "UniPROJEÇÃO - Campus Taguatinga"
-    }, {
-      "id": "69d6260c-144c-4cdb-8e8b-bb87d261e0da",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "bf734664-3b98-4766-92c7-ec84575c3844",
-    "name": "Unidade do Guará-Retraído",
-    "commands": [{
-      "id": "b78ecbf6-d438-40ae-a37e-4d278901252e",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "90ce66b1-9718-456a-b274-e95bbebd545e",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "35e41d19-88be-4113-8f96-108cf0d316b1",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "453ae409-f780-4b08-a8b9-d2d39cdb62a5",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Unidades",
-      "targets": [
-        ["linkText=Unidades", "linkText"],
-        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "63ee4463-cbbc-4643-8be6-1571aaaed4ec",
-      "comment": "",
-      "command": "click",
-      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding",
-      "targets": [
-        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding", "css:finder"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[2]/address/a/strong", "xpath:idRelative"],
-        ["xpath=//div[2]/address/a/strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'Faculdade Projeção do Guará')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "579cd2ac-1af1-40e2-9e42-df1c82507aac",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "17789ab9-c587-4a48-bf5a-2e563cac9fd8",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "fbbce935-6712-4435-972e-7f6c35d1dbb4",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [],
-      "value": "Faculdade Projeção do Guará"
-    }, {
-      "id": "22204dbe-5530-4cf8-b5c7-fd1ba6194841",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "0da2ea30-33ca-44a9-9883-9eacf774c729",
-    "name": "Unidade de Taguatinga-Retraído",
-    "commands": [{
-      "id": "59ea3f57-b39a-4c68-8939-1de4cd88a461",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "96bfc864-e150-420c-92d8-c1cfeefeb463",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5e2b886e-d7d1-443a-a28c-cc0772c5fa7b",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "263040cf-a1c4-46be-880c-568a21cc441f",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Unidades",
-      "targets": [
-        ["linkText=Unidades", "linkText"],
-        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "1f673d57-195a-449a-83b7-787647793960",
-      "comment": "",
-      "command": "click",
-      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding",
-      "targets": [
-        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding", "css:finder"],
-        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[3]/address/a/strong", "xpath:idRelative"],
-        ["xpath=//div[3]/address/a/strong", "xpath:position"],
-        ["xpath=//strong[contains(.,'UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "bebd7e5f-33e7-4140-93f1-e0cedda0da1c",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "ec4c2464-cfe4-44ca-805f-a679dd874aaa",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "cb604b58-11a0-43ea-b068-bf0f55849bef",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
-      ],
-      "value": "UniPROJEÇÃO - Campus Taguatinga"
-    }, {
-      "id": "683aa75a-7adf-4569-8aea-820c667dd11b",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
     "id": "966fec3c-7b57-4ea1-af7d-3f4357f8a939",
     "name": "Diplomas - Normal",
     "commands": [{
@@ -3456,6 +1944,1068 @@
       "targets": [],
       "value": ""
     }]
+  }, {
+    "id": "03b16b3f-e876-4811-bcb9-5eb65e011eef",
+    "name": "Unidades-Normal",
+    "commands": [{
+      "id": "78e34ef2-f4f3-451e-bce5-6fa0c6968ff6",
+      "comment": "",
+      "command": "open",
+      "target": "/faculdade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b99b72d-4670-411a-9f79-cb27a468bf0b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76004fa1-0d70-4be9-a2a0-fdd9ecfc5fc3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unidades",
+      "targets": [
+        ["linkText=Unidades", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ee0e6f6-6cba-4cda-a6bd-2096ab208d41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding", "css:finder"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div/address/a/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Faculdade Projeção de Sobradinho - Prédio 13')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "81db3012-e86a-41c8-a4e4-e6091ec23182",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "b0e6b5f9-a0e2-4322-a95f-dacca121d147",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ece6647d-9429-435c-b07a-a0012a6bf45e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
+      ],
+      "value": "Faculdade Projeção de Sobradinho - Prédio 13"
+    }, {
+      "id": "a8f0c524-e798-45cf-a63e-fb61a819b129",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unidades",
+      "targets": [
+        ["linkText=Unidades", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "841e1296-60e4-453b-93d4-e93066eb7a96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding", "css:finder"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[3]/address/a/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/address/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d9e61ef-aa51-4336-ac79-f6a549ef861d",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "4987f857-7021-4b00-bafc-df8d174397f1",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0fad5dd-c7af-43b1-bb5b-40b54c562851",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
+      ],
+      "value": "UniPROJEÇÃO - Campus Taguatinga"
+    }, {
+      "id": "9ee8ee89-473a-424c-b9d7-9acf74d9e2f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unidades",
+      "targets": [
+        ["linkText=Unidades", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bddd4216-3fd9-444d-adaf-ba28865e6db4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding", "css:finder"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[2]/address/a/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/address/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Faculdade Projeção do Guará')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44663d6c-3e79-4a1e-8d93-4d39b52f142c",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "c5d3abb8-0900-4389-983a-8e1f2b51a95e",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d20132e-717a-4b49-9ec2-87cccf370d85",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [],
+      "value": "Faculdade Projeção do Guará"
+    }, {
+      "id": "d94adef2-8d38-4eff-bfb0-f127db97a263",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f6a42e5b-c632-4ebd-9080-b29a3be78a7b",
+    "name": "Unidades-Retraído",
+    "commands": [{
+      "id": "062f1ebd-f709-4663-b8d1-dec0a0418ee1",
+      "comment": "",
+      "command": "open",
+      "target": "/faculdade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81782b63-e2e1-4cf0-977a-c9b358c57e98",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c77d439-19ce-40ac-9831-d0f5a9ba866e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle:nth-child(1)",
+      "targets": [
+        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d32fac79-5481-4bc3-8dce-3610489bc188",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unidades",
+      "targets": [
+        ["linkText=Unidades", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d09d539-0d84-4c5c-94a0-725eae46752a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(1) .button-link > .ng-binding", "css:finder"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div/address/a/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Faculdade Projeção de Sobradinho - Prédio 13')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b377ecea-8524-43d1-9889-aabc7607f7a8",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "a89c8eb5-0818-4ed5-9368-4386ec7ec053",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "46f51f2b-5d14-408f-8ec9-8b19eaf49406",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
+      ],
+      "value": "Faculdade Projeção de Sobradinho - Prédio 13"
+    }, {
+      "id": "6aef563b-3848-40fe-af68-3140c204d8e9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle:nth-child(1)",
+      "targets": [
+        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99b0f73e-50b2-4873-b60a-80a6d1c56fa9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unidades",
+      "targets": [
+        ["linkText=Unidades", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5669d360-22b0-4395-930b-e9dd796b3ed2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(3) .button-link > .ng-binding", "css:finder"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[3]/address/a/strong", "xpath:idRelative"],
+        ["xpath=//div[3]/address/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e190afd-f77a-4085-879f-888670da032b",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "091630da-da76-4bd3-bc78-56c209b036c2",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35cb4561-7281-4523-a406-b1eed686cdf8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' UniPROJEÇÃO - Campus Taguatinga')]", "xpath:innerText"]
+      ],
+      "value": "UniPROJEÇÃO - Campus Taguatinga"
+    }, {
+      "id": "fca9197e-2a58-40b2-b335-bb77069d1403",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-toggle:nth-child(1)",
+      "targets": [
+        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d0d8cdd-e401-457a-9f01-4b221c5e5c2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unidades",
+      "targets": [
+        ["linkText=Unidades", "linkText"],
+        ["css=.dropdown:nth-child(3) > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Unidades')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[4]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Unidades ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "30f3c493-a7a0-42a6-8f45-5558a0e49673",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding",
+      "targets": [
+        ["css=.col-sm-12:nth-child(1) .col-md-6:nth-child(2) .button-link > .ng-binding", "css:finder"],
+        ["xpath=//ul[@id='menu-direita']/li[3]/ul/li/div/div[2]/address/a/strong", "xpath:idRelative"],
+        ["xpath=//div[2]/address/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Faculdade Projeção do Guará')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85224984-0f79-4d28-b46a-fb9836184d6e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "94600663-4c48-40f7-9c1e-a44986c08744",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08299a5d-4418-4b36-984a-b32ac85f922b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [],
+      "value": "Faculdade Projeção do Guará"
+    }, {
+      "id": "30dbfcce-1f56-44e7-9e09-52ac8f4ed90d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ed2a02da-6505-47b0-821c-0804044b3d84",
+    "name": "Cursos de Tecnologia",
+    "commands": [{
+      "id": "2edbbc61-8215-4a9f-bbff-ce0b62e9f6a1",
+      "comment": "",
+      "command": "open",
+      "target": "/faculdade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "005841ad-7f2f-4ab4-9d2f-bd9728c70c3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a0dad97-2c71-460d-addc-cf279283aa84",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2e966a-433f-431b-8c7f-86cc45fbf623",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tecnologia em Análise e Desenvolvimento de Sistemas",
+      "targets": [
+        ["linkText=Tecnologia em Análise e Desenvolvimento de Sistemas", "linkText"],
+        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(20) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[20]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/23678/tecnologia-em-analise-e-desenvolvimento-de-sistemas')]", "xpath:href"],
+        ["xpath=//li[20]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a009f04-2b64-431e-9666-76b003245d4f",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "40ec815d-eb20-4aa2-9022-0d0175c7578b",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "679b1f45-58a1-4cee-a618-2eedfe125b13",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)')]", "xpath:innerText"]
+      ],
+      "value": "Tecnologia em Análise e Desenvolvimento de Sistemas"
+    }, {
+      "id": "d7737f06-faaf-43a7-8706-fe2a755e9da1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "654870e8-cda6-4187-9dde-bdbb118259e8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)",
+      "targets": [
+        ["linkText=Tecnologia em Análise e Desenvolvimento de Sistemas", "linkText"],
+        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(20) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[20]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/23678/tecnologia-em-analise-e-desenvolvimento-de-sistemas')]", "xpath:href"],
+        ["xpath=//li[20]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tecnologia em Análise e Desenvolvimento de Sistemas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dccec098-eb27-4783-8593-a610659cb0fb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "43053919-7f91-4f0c-ad7b-b46eac36a4ca",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cae8ede-c431-45e2-8359-96e6adf924bf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)')]", "xpath:innerText"]
+      ],
+      "value": "Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)"
+    }, {
+      "id": "3612c085-b6c0-4cd9-82c2-6eb7eed1034b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd65a11f-efa2-48e9-abec-a7afdab116ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sistemas de Informação (Presencial)",
+      "targets": [
+        ["linkText=Sistemas de Informação (Presencial)", "linkText"],
+        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(19) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Sistemas de Informação (Presencial)')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[19]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/23677/sistemas-de-informacao-presencial')]", "xpath:href"],
+        ["xpath=//li[19]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sistemas de Informação (Presencial)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9644876-8fd6-436a-8641-80831eb560b6",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "075e3d30-772a-40c9-aa32-ff617bb9a75e",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3fed508-b51a-46e7-b447-d64e76da7768",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)')]", "xpath:innerText"]
+      ],
+      "value": "Sistemas de Informação (Presencial)"
+    }, {
+      "id": "bdd51d48-e41a-4c54-a5ca-a1aa10f9cac2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "349c66bb-4190-43da-9984-f8779b0f91c9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sistemas de Informação (Flex)",
+      "targets": [
+        ["linkText=Sistemas de Informação (Presencial)", "linkText"],
+        ["css=.col-md-6:nth-child(1) .ng-scope:nth-child(19) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'Sistemas de Informação (Presencial)')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li/ul/li[19]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/23677/sistemas-de-informacao-presencial')]", "xpath:href"],
+        ["xpath=//li[19]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sistemas de Informação (Presencial)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd303775-40e9-464f-8fc5-5b19fb2b3f58",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "da956d5d-8cc1-487e-bd94-9b1aabb97e6f",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9de630a9-54fa-4c70-8330-7fdc2776716a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' Tecnologia em Análise e Desenvolvimento de Sistemas (Flex)')]", "xpath:innerText"]
+      ],
+      "value": "Sistemas de Informação (Flex)"
+    }, {
+      "id": "248f6e2d-2bd5-4f71-9194-bf3b499c03c7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ca9b34cf-2073-413a-9eb9-7cf88688b08c",
+    "name": "MBA de Gestão - Retraído",
+    "commands": [{
+      "id": "02d4f4d8-fab6-45a6-bd81-aadb7cad6dce",
+      "comment": "",
+      "command": "open",
+      "target": "/faculdade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c612d1a-91e9-4b04-87f3-991abb812fcd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75101bec-dbc5-4023-835c-adb3cfffa9ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f0b1cff-eee3-4a19-b164-89992394a9d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6c7541e-3fd2-4926-8509-cd21d4e22244",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão da Qualidade de Software",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74128ef2-f3e9-4a95-bf1a-b04b69bc7e3e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "76ba4f94-7bc4-486f-916b-92e2f268e090",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84135b88-2acb-4b80-a639-44d16d7787a7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão da Qualidade de Software"
+    }, {
+      "id": "bb1808fe-31a9-4b1e-a7a9-b987d275b2f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a382ce9-7ed7-415a-a5b2-47e771fcd9ed",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "63230ca6-778e-4e74-aa57-29dc1b7cafe7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão de Projetos",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3039ff35-5123-4151-9075-2841b1f665ca",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "58d9f1bb-2169-471b-9c1c-9d8736121c5f",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a40d566e-c7b6-4707-aace-1804f22452bd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão de Projetos"
+    }, {
+      "id": "ba18d220-86a8-43bc-b27a-e8845dbf3e95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(3)",
+      "targets": [
+        ["css=.icon-bar:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span[3]", "xpath:idRelative"],
+        ["xpath=//span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04425a91-3980-42f9-819b-437f5f2d9d06",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "246f3e9d-4bb4-4daa-8045-153eddc8ec97",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA em Gestão Estratégica de Negócios",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d553e664-6ee9-4625-aedf-a1b72e4c2070",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "5c5b021c-f770-41c5-8ce9-51b594164b0f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA em Gestão Estratégica de Negócios"
+    }, {
+      "id": "fc49e57c-f3e0-45f6-8374-6c9e7eda5014",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a64829d9-e54a-4c27-867e-6b0f939aaf06",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d83629d1-fa55-4883-b1fe-443d66b7dd63",
+    "name": "MBA de Gestão - Normal",
+    "commands": [{
+      "id": "e29d3c20-8de1-4393-9673-ea6ecbbe45d0",
+      "comment": "",
+      "command": "open",
+      "target": "/faculdade",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88804d85-275f-41b7-96b5-4262b81060a4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x800",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "149acb71-f2bf-414f-9ce2-377538e6b78d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b580fe1-3096-4395-b831-deece01d7cb4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão da Qualidade de Software",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a035a9f1-e491-414d-b06a-de4c107ea8a7",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "0a03f4ba-7f4d-4624-94da-68b243cce62f",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28d9c368-a50c-41c1-9d08-24132a443fd6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão da Qualidade de Software"
+    }, {
+      "id": "579aadc3-7f97-49ac-86fd-cf551fd64f81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4bfa38d-4564-4e2e-8768-89bfe7120c91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA Em Gestão de Projetos",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9be2ca30-8495-4893-959a-79d541b12f1e",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "5b3c5f55-68e6-4742-ab00-e40500f53603",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb4edf94-8df4-4189-a8f2-4ca8a85f037d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA Em Gestão de Projetos"
+    }, {
+      "id": "5af9538e-ceb2-4569-9a12-6fa55056b592",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cursos",
+      "targets": [
+        ["linkText=Cursos", "linkText"],
+        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
+        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0377db5-293f-402f-aad7-1f866b320efb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=MBA em Gestão Estratégica de Negócios",
+      "targets": [
+        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
+        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
+        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
+        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a03c74c-ed02-4886-b8b0-8eded5d922eb",
+      "comment": "",
+      "command": "executeScript",
+      "target": "return window.location.href;",
+      "targets": [],
+      "value": "urlAtual"
+    }, {
+      "id": "fd604923-4045-4981-a21b-a756bec0ba8c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.page-section-text",
+      "targets": [
+        ["css=.page-section-text", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
+      ],
+      "value": "MBA em Gestão Estratégica de Negócios"
+    }, {
+      "id": "695bafac-37ae-47e6-8755-30fb4a5dd632",
+      "comment": "",
+      "command": "echo",
+      "target": "${urlAtual}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a119a207-5da6-4e54-80cc-f1de742f9679",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "d1c5ae49-79ab-417a-a2da-c2106d008946",
@@ -3505,21 +3055,21 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["2063ff77-6314-47fd-b97b-ae1bc5c8277e", "a6ba361a-f65e-44d4-a264-e0a9e1545f1b", "4dd7cf43-eb66-47b9-b8d7-d4724c06c2d2", "9d892c43-dca1-4098-973a-d4aacff92c18", "0da2ea30-33ca-44a9-9883-9eacf774c729", "bf734664-3b98-4766-92c7-ec84575c3844"]
+    "tests": ["03b16b3f-e876-4811-bcb9-5eb65e011eef", "f6a42e5b-c632-4ebd-9080-b29a3be78a7b"]
   }, {
     "id": "092d36f3-6021-464e-928b-5ede81a9a4ae",
     "name": "Verificar Cursos (Tecnologia)",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["95c2d488-02dc-4047-825b-e35604984442", "823e3481-1938-4ca0-9e15-b553faebf2eb", "b1e91bfc-8338-4c59-b013-36afa96f8e8a", "6aa9dddf-3503-4562-88a6-b8438591b0da"]
+    "tests": ["ed2a02da-6505-47b0-821c-0804044b3d84"]
   }, {
     "id": "52f74183-bb4a-42b7-a3b2-7fdea7c3dcfb",
     "name": "Verificar Pós-Graduações (MBA)",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["f320903c-2bed-40f6-b5de-8715cd3f828d", "3dad5215-6e74-476d-a0d9-a2d46aedc274", "4775c9f3-7e3a-475e-8f30-36885c9ce34b", "ccaed505-34de-4411-8b3d-b9d3617f1747", "7deabb95-307f-41f4-8c74-352417b80e4a", "69afc270-def2-405d-a1d5-f67aac583ea1", "968c1dbc-8d14-41b0-87d7-96ddb5221b0d", "1138611d-6adf-480a-b363-843a08032ed0", "6536420f-c8ce-462e-b547-96786d93d9ef", "1f65a4b8-0f35-412c-99aa-1086729af256", "3342a4c9-4af0-442d-817d-0ef98300f654", "36d1b1f8-779a-434d-b9dc-ec044ee83394"]
+    "tests": ["7deabb95-307f-41f4-8c74-352417b80e4a", "69afc270-def2-405d-a1d5-f67aac583ea1", "6536420f-c8ce-462e-b547-96786d93d9ef", "1f65a4b8-0f35-412c-99aa-1086729af256", "d83629d1-fa55-4883-b1fe-443d66b7dd63", "ca9b34cf-2073-413a-9eb9-7cf88688b08c"]
   }, {
     "id": "e962cd40-e673-4de7-82fb-729a9cf3af2c",
     "name": "Núcleo de Extensão",
