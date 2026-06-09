@@ -1,7 +1,7 @@
 {
   "id": "b37f6e61-f095-47d8-a8fc-7e0ab92d482d",
   "version": "2.0",
-  "name": "Acessar Projecao",
+  "name": "acessar_faculdade_projecao",
   "url": "https://projecao.br",
   "tests": [{
     "id": "c180fe71-c0dd-4586-917e-e63e891898ff",
@@ -934,7 +934,7 @@
     }]
   }, {
     "id": "c794cdf9-fa82-41be-a4f8-c42abf873da4",
-    "name": "Calendários-Retraído",
+    "name": "Calendários - Retraído",
     "commands": [{
       "id": "c2317172-ecd4-469e-8a99-e02c56faf2cc",
       "comment": "",
@@ -1152,7 +1152,7 @@
     }]
   }, {
     "id": "11f811af-2e50-4f17-9c23-0a72e461bea8",
-    "name": "Calendários-Normal",
+    "name": "Calendários - Normal",
     "commands": [{
       "id": "16c454cd-527a-4e00-b083-a704119f83ed",
       "comment": "",
@@ -1335,7 +1335,7 @@
     }]
   }, {
     "id": "b46f79c4-c246-4b13-a903-cd015d67874a",
-    "name": "Extensão-Normal",
+    "name": "Extensão - Normal",
     "commands": [{
       "id": "69b31f1a-f182-4806-b421-ba2271e4cfd4",
       "comment": "",
@@ -1442,354 +1442,6 @@
       "value": "Cursos de Extensão - Inscrição"
     }, {
       "id": "78a5a988-3067-4cd4-9c9e-99ccad38d562",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "7deabb95-307f-41f4-8c74-352417b80e4a",
-    "name": "Gestão Escolar-Normal",
-    "commands": [{
-      "id": "b12355b4-ffbc-4a15-9928-7f89bf11f6ff",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "da7526dc-eaae-4a3c-8b79-11db4e1c28ce",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ecca0bac-203c-489a-a41d-0719b7c112f4",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "57ffde00-a4e7-479e-b0f5-f7fb95fce2af",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão Escolar",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "957caea4-f8bd-4394-b9e3-f08ebd1ae46e",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "778036d2-b7cb-4126-9f26-9924a4cdb7c7",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "9fb6e0b4-67eb-4a17-89b1-9f75b6c8a390",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão Escolar"
-    }, {
-      "id": "9592d8e2-88ba-469d-a583-d0d833888869",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "69afc270-def2-405d-a1d5-f67aac583ea1",
-    "name": "Gestão Escolar-Retraído",
-    "commands": [{
-      "id": "5830b24d-a90c-4917-8b5c-a6057e1a4d1c",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5abe546d-87ac-4d00-98e3-2870d70777db",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "ec1db077-c072-4511-8cfe-78203f75d1fd",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "af7314ce-cae6-4194-b072-8efcb8003543",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "143888b8-fff5-480f-8bb6-799c9f1df4af",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão Escolar",
-      "targets": [
-        ["linkText=MBA Em Gestão da Qualidade de Software", "linkText"],
-        ["css=.col-md-6:nth-child(2) > .ng-scope:nth-child(1) > .ng-scope:nth-child(10) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão da Qualidade de Software')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[10]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27608/mba-em-gestao-da-qualidade-de-software')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[10]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "9420178a-1ffe-404b-ac8e-72fb9a018738",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "f8fadf36-cc31-467f-9b26-9c6214134192",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "44ab228c-b6b5-426f-b58c-9260e3a5c492",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão Escolar"
-    }, {
-      "id": "a38f1767-eaf0-4e61-ad83-158b9c750ac1",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "1f65a4b8-0f35-412c-99aa-1086729af256",
-    "name": "Gestão Pública-Retraído",
-    "commands": [{
-      "id": "456f8b76-62c3-455e-9aa4-8346bf2e3989",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "904af510-4c21-43cc-a3cf-1df1c0b14818",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "550x693",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "d602054c-0e3f-4e6b-8f2f-450742d8f6d1",
-      "comment": "",
-      "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
-      "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "a0e4e4a5-56ec-4440-91e0-2518ee65adff",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "fdf6585b-04b5-4467-a224-18ba09b08a64",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão Pública",
-      "targets": [
-        ["linkText=MBA Em Gestão Pública", "linkText"],
-        ["css=.col-md-6:nth-child(2) .ng-scope:nth-child(14) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão Pública')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[14]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27606/mba-em-gestao-publica')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[14]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão Pública')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f820029d-15ce-4340-a5ca-f8b2f4479f83",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "f9bb5270-cc1c-4877-b791-438b2f7fe275",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "926de17c-dc12-4272-ba1c-6e3d450feaca",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão Pública"
-    }, {
-      "id": "bae229c3-e9c1-451f-852f-f76b69375b96",
-      "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
-    }]
-  }, {
-    "id": "6536420f-c8ce-462e-b547-96786d93d9ef",
-    "name": "Gestão Pública-Normal",
-    "commands": [{
-      "id": "29fe5b90-25fc-4014-a609-0d7b976e236a",
-      "comment": "",
-      "command": "open",
-      "target": "/faculdade",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "91482ba1-6b45-4185-9661-da89159068b1",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1280x800",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "7f481250-32dd-4620-9430-b1674e2784db",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cursos",
-      "targets": [
-        ["linkText=Cursos", "linkText"],
-        ["css=.ng-isolate-scope > .dropdown-toggle", "css:finder"],
-        ["xpath=//a[contains(text(),'Cursos')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
-        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
-        ["xpath=//a[contains(.,' Cursos ')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "d2ae77e4-a394-4856-be6d-aaaee44eb2f1",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=MBA Em Gestão Pública",
-      "targets": [
-        ["linkText=MBA Em Gestão Pública", "linkText"],
-        ["css=.col-md-6:nth-child(2) .ng-scope:nth-child(14) > .ng-binding", "css:finder"],
-        ["xpath=//a[contains(text(),'MBA Em Gestão Pública')]", "xpath:link"],
-        ["xpath=//ul[@id='menu-direita']/li[4]/ul/li[2]/ul/li[14]/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/faculdade/curso/27606/mba-em-gestao-publica')]", "xpath:href"],
-        ["xpath=//li[2]/ul/li[14]/a", "xpath:position"],
-        ["xpath=//a[contains(.,'MBA Em Gestão Pública')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "41270c65-e11a-4adc-97a5-c2dd2e508b42",
-      "comment": "",
-      "command": "executeScript",
-      "target": "return window.location.href;",
-      "targets": [],
-      "value": "urlAtual"
-    }, {
-      "id": "8f355021-d716-4ec4-a133-8dad36aca423",
-      "comment": "",
-      "command": "echo",
-      "target": "${urlAtual}",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "92c09b23-b0a8-4999-a64c-5db7d5a1625b",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=.page-section-text",
-      "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' MBA Em Gestão da Qualidade de Software')]", "xpath:innerText"]
-      ],
-      "value": "MBA Em Gestão Pública"
-    }, {
-      "id": "c78810e4-146f-40f1-9dbf-cc606a35e10a",
       "comment": "",
       "command": "close",
       "target": "",
@@ -1946,7 +1598,7 @@
     }]
   }, {
     "id": "03b16b3f-e876-4811-bcb9-5eb65e011eef",
-    "name": "Unidades-Normal",
+    "name": "Unidades - Normal",
     "commands": [{
       "id": "78e34ef2-f4f3-451e-bce5-6fa0c6968ff6",
       "comment": "",
@@ -2125,7 +1777,7 @@
     }]
   }, {
     "id": "f6a42e5b-c632-4ebd-9080-b29a3be78a7b",
-    "name": "Unidades-Retraído",
+    "name": "Unidades - Retraído",
     "commands": [{
       "id": "062f1ebd-f709-4663-b8d1-dec0a0418ee1",
       "comment": "",
@@ -3315,7 +2967,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["7deabb95-307f-41f4-8c74-352417b80e4a", "69afc270-def2-405d-a1d5-f67aac583ea1", "6536420f-c8ce-462e-b547-96786d93d9ef", "1f65a4b8-0f35-412c-99aa-1086729af256", "d83629d1-fa55-4883-b1fe-443d66b7dd63"]
+    "tests": ["d83629d1-fa55-4883-b1fe-443d66b7dd63", "017fadab-4026-4b02-919b-c4e97874206a"]
   }, {
     "id": "e962cd40-e673-4de7-82fb-729a9cf3af2c",
     "name": "Núcleo de Extensão",
