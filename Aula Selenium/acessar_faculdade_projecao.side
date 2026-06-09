@@ -2830,12 +2830,11 @@
       "id": "a8e7279f-9d97-4263-bdce-4502bcf35bda",
       "comment": "",
       "command": "click",
-      "target": "css=.navbar-toggle:nth-child(1)",
+      "target": "css=.icon-bar:nth-child(1)",
       "targets": [
-        ["css=.navbar-toggle:nth-child(1)", "css:finder"],
-        ["xpath=//button[@type='button']", "xpath:attributes"],
-        ["xpath=//div[@id='menu-site']/div/div/button", "xpath:idRelative"],
-        ["xpath=//button", "xpath:position"]
+        ["css=.icon-bar:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='menu-site']/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
       ],
       "value": ""
     }, {
@@ -3374,12 +3373,12 @@
       "id": "3d285ae3-ff49-46d0-9705-0fb6f5e4d34e",
       "comment": "",
       "command": "assertText",
-      "target": "css=.page-section-text",
+      "target": "css=.page-section-text > .ng-binding",
       "targets": [
-        ["css=.page-section-text", "css:finder"],
-        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/h3", "xpath:idRelative"],
-        ["xpath=//h3", "xpath:position"],
-        ["xpath=//h3[contains(.,' Graduação')]", "xpath:innerText"]
+        ["css=.page-section-text > .ng-binding", "css:finder"],
+        ["xpath=//div[@id='conteudo']/div[2]/div/div/div/div/h3/span", "xpath:idRelative"],
+        ["xpath=//h3/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Graduação')]", "xpath:innerText"]
       ],
       "value": "Graduação"
     }, {
